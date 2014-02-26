@@ -1,7 +1,8 @@
 (ns zk-web.server
   (:require [noir.server :as server]
             [zk-web.conf :as conf]
-            ))
+            )
+  (:gen-class :main true))
 
 (server/load-views-ns 'zk-web.pages)
 
